@@ -68,6 +68,7 @@ void loop() {
       delay(100);
       lcd.setCursor(0,1);
       lcd.print("Turning Pump off...");
+      delay(5000);
       Serial.println("Turning Pump off...\n");
       delay(10);
       digitalWrite(relaySignal,LOW);
@@ -78,8 +79,6 @@ void loop() {
 
   // Display "Done Watering!" on the LCD
   lcd.clear();
-  lcd.setCursor(0,0);
-  lcd.print("Done Watering!");
   delay(10);
 
   // Turn off the voltage sensor, relay signal, and relay input
@@ -94,13 +93,15 @@ void loop() {
   startTime = millis(); 
   while (millis() - startTime < 3600000UL * 36) {
     lcd.clear();
+    delay(7500);
+    lcd.setCursor(0,0);
+    lcd.print("Done Watering!");
     lcd.setCursor(0, 1);
     lcd.print("Water in:"); // Prints to the lcd that the watering cycle will repeat in # amount of time
     lcd.setCursor(10, 1);
     lcd.print((3600000UL * 36 - (millis() - startTime)) / 3600000);
-    delay(2000);
     lcd.print("hours");
-    delay(1000);
+    delay(5000);
   }
   
   // Clear the LCD screen after the timer ends
