@@ -14,4 +14,4 @@ The supplies used are as listed:
 11. One ANPTGHT 1/2" Hose Barb Fitting Equal Barbed Y Shaped 3 Way Plastic Tubing Joint Splicer: 
     This is for the circle that will be created from the rubber tubing to water the plants and feed to the pump
     
-Note: For the LCD_I2C, make sure for the lcd, that the ~A5 pin is matches with SCL on the LCD_I2C and the ~A4 pin is matched with the SDA pin on the LCD_I2C
+Note: For the LCD_I2C, make sure that the ~A5 pin is matched with SCL on the LCD_I2C, and the ~A4 pin is matched with the SDA pin on the LCD_I2C
