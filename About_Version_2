@@ -1,0 +1,6 @@
+About Version 2:
+ 1. The THRESHOLD variable was decreased to 320 account for a closer value to the specific wet soil value 283, which accounts for errors
+ 2. Featuring longer 40 second intervals of the pump being on for better watering due to the Capacitive Moisture Sensor being located at the top
+ 3. The loop was also increased to being repeated 7 times, each 40 second intervals
+ 4. These new features promote more accurate sensing and watering based on the current state of moisture in the soil
+ 5. The LCD_I2C is now better controled, with longer intervals of showing text and values, allowing for the person to see what is happening
